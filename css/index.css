@@ -1,0 +1,11 @@
+@font-face {
+    font-family: HarmonyOS;
+    src: url(./HarmonyOS_Sans_Medium.ttf);
+}
+body {
+    background: #646464;
+    font-family: HarmonyOS;
+}
+a {
+    text-decoration: none;
+}

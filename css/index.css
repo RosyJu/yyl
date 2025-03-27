@@ -9,7 +9,7 @@ body {
 }
 div.head {
     /* background-image: "../images/background.png"; */
-    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),url(../images/background.png) no-repeat;
+    background: linear-gradient(rgba(214,214,214, 0),rgba(214,214,214, 0.1),rgba(214,214,214, 0.3),rgba(214,214,214, 0.5),rgba(214,214,214, 1)),url(../images/background.png) no-repeat;
     background-size:100% 100%;
     width: 100vw;
     height: 50vw;
@@ -18,26 +18,85 @@ div.prefix {
     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
     width: 100vw;
     height: 3vw;
+    backdrop-filter: blur(10px);
+    color: #d6d6d6;
 }
 div.prefix-left {
     padding-top: calc(1.5vw - 10.5px);
-    padding-left: 100px;
+    padding-left: 6vw;
     float: left;
 }
 div.prefix-right {
     padding-top: calc(1.5vw - 10.5px);
-    /* padding-left: calc(100% - 268.298px); */
-    padding-right: 100px;
+    padding-right: 6vw;
     float: right;
 }
 div.head-card {
     margin: calc(12.5vw - 21px) 25vw calc(12.5vw - 21px) 25vw;
     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
     width: 50vw;
-    height: 25vw;
+    height: 25vw;   
     backdrop-filter: blur(10px);
     box-shadow: 0 0 50px rgb(255, 255, 255);
     border-radius: 10px;
+}
+div.headicon {  
+    --headimgwidth: 7vw;
+    --headimgheight: 7vw;
+    width: var(--headimgwidth);
+    height: var(--headimgwidth);
+}
+img.headimg {
+    width: var(--headimgwidth);
+    height: var(--headimgwidth);
+    border-radius: 3vw;
+}
+div.head-card > div > canvas {
+    float: left;
+    width: 26vw;
+    height: 17vw;
+}
+div.headicon.left {
+    float: left;
+    margin: 5vw 0px 5vw 5vw;
+}
+div.headicon.right {
+    float: right;
+    margin: 5vw 5vw 5vw 0px;
+}
+div.head-center {
+    float: left;
+}
+
+div.head-center > div.heart {
+    margin: 6.5vw 10.5vw 0px 10.5vw;
+    left: 50%;
+    width: 5vw;
+    height: 5vw;
+    background-color: tomato;
+    transform: rotate(-45deg);
+}
+div.head-center > div.heart:before {
+    content: "";
+    position: absolute;
+    top: -2.5vw;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color: tomato;
+}
+div.head-center > div.heart:after {
+    content: "";
+    position: absolute;
+    left: 2.5vw;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color: tomato;
+}
+div.time {
+    
+    font-size: 2vw;
 }
 a {
     text-decoration: none;

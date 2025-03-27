@@ -1,0 +1,251 @@
+/* 全局 body 样式设置 */
+body {
+    background-color: #f1d5da;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 表白内容容器样式 */
+.container {
+    width: 90%;
+    max-width: 500px;
+}
+
+/* 主图片样式 */
+#mainImage {
+    width: 100%;
+    max-width: 200px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* 侧头图片样式 */
+#sidehead {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+/* 新增链接样式 */
+#nameInputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sidehead-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#xiaohongshuLink,
+#douyinLink,
+#repoLink {
+    font-size: 2vw;
+    color: #68495b;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+/* 标题样式 */
+h1 {
+    font-size: 3.5vw;
+    color: #68495b;
+    margin: 20px 0;
+    word-wrap: break-word;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* 按钮通用样式 */
+button {
+    font-family: Arial, sans-serif;
+    font-size: 4vw;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* “可以”按钮样式 */
+#yes {
+    background-color: #d4818e;
+    color: white;
+}
+
+/* “不要”按钮样式 */
+#no {
+    background-color: #6784b1;
+    color: white;
+    position: relative;
+}
+
+/* 表白成功页面样式 */
+.yes-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffdae0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+/* 表白成功文字样式 */
+.yes-text {
+    font-family: Arial, sans-serif;
+    font-size: 7vw;
+}
+
+/* 表白成功图片样式 */
+.yes-image {
+    width: 50%;
+    max-width: 300px;
+}
+
+/* 输入框样式 */
+input[type="text"] {
+    font-family: Arial, sans-serif;
+    font-size: 3.5vw;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    width: 90%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+/* 用于输入名字的容器样式 */
+#nameInputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+/* 按钮激活（点击）样式，优化点击反馈 */
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 按钮获得焦点样式，焦点管理 */
+button:focus {
+    outline: 2px solid #d4818e;
+    outline-offset: 2px;
+}
+
+/* 输入框获得焦点样式，焦点管理 */
+input:focus {
+    outline: 2px solid #d4818e;
+    outline-offset: 2px;
+}
+
+/* 电脑端样式优化，当屏幕宽度大于等于 768px 时应用以下样式 */
+@media (min-width: 768px) {
+    body {
+        display: flex;
+    }
+
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        max-width: none;
+    }
+
+    #mainImage {
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    .yes-text {
+        font-size: 36px;
+    }
+
+    .yes-image {
+        width: 300px;
+    }
+
+    input[type="text"] {
+        font-size: 16px;
+        width: 300px;
+    }
+
+    #nameInputContainer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #sidehead {
+        width: 200px;
+    }
+
+    #xiaohongshuLink,
+    #douyinLink,
+    #repoLink {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}
+
+/* 新增动画关键帧，实现从下往上冒出和渐显效果 */
+@keyframes slideUpFadeIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* 用于触发动画的类名 */
+.slide-up-fade-in {
+    animation: slideUpFadeIn 0.5s ease-out both;
+}
+
+/* 新增动画关键帧，实现慢慢浮现效果 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* 用于触发慢慢浮现动画的类名 */
+.fade-in {
+    animation: fadeIn 1s ease-out both;
+}

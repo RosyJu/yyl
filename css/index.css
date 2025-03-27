@@ -3,8 +3,41 @@
     src: url(./HarmonyOS_Sans_Medium.ttf);
 }
 body {
-    background: #646464;
+    background: #d6d6d6;
     font-family: HarmonyOS;
+    margin: 0;
+}
+div.head {
+    /* background-image: "../images/background.png"; */
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),url(../images/background.png) no-repeat;
+    background-size:100% 100%;
+    width: 100vw;
+    height: 50vw;
+}
+div.prefix {
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+    width: 100vw;
+    height: 3vw;
+}
+div.prefix-left {
+    padding-top: calc(1.5vw - 10.5px);
+    padding-left: 100px;
+    float: left;
+}
+div.prefix-right {
+    padding-top: calc(1.5vw - 10.5px);
+    /* padding-left: calc(100% - 268.298px); */
+    padding-right: 100px;
+    float: right;
+}
+div.head-card {
+    margin: calc(12.5vw - 21px) 25vw calc(12.5vw - 21px) 25vw;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+    width: 50vw;
+    height: 25vw;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 50px rgb(255, 255, 255);
+    border-radius: 10px;
 }
 a {
     text-decoration: none;

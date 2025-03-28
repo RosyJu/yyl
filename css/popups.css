@@ -1,0 +1,11 @@
+div.popups {
+    left: 0vw;
+    top: 0vw;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+div.popups > div.body {
+    
+}

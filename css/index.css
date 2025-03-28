@@ -2,6 +2,9 @@
     font-family: HarmonyOS;
     src: url(./HarmonyOS_Sans_Medium.ttf);
 }
+::-webkit-scrollbar {
+    display: none;
+}
 body {
     background: #d6d6d6;
     font-family: HarmonyOS;
@@ -30,6 +33,10 @@ div.prefix-right {
     padding-top: calc(1.5vw - 10.5px);
     padding-right: 6vw;
     float: right;
+}
+div.prefix-right > div {
+    padding-left: 2vw;
+    float: left;
 }
 div.head-card {
     margin: calc(12.5vw - 21px) 25vw calc(12.5vw - 21px) 25vw;
@@ -97,6 +104,7 @@ div.date {
     width: 50vw;
     font-size: 3vw;
     text-align: center;
+    color:bisque;
 }
 div.date > div.day , div.date > div.time {
     text-align: center;

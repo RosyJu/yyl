@@ -17,28 +17,28 @@ div.head {
     width: 100vw;
     height: 50vw;
 }
-div.prefix {
+div.head div.prefix {
     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
     width: 100vw;
     height: 3vw;
     backdrop-filter: blur(10px);
     color: #d6d6d6;
 }
-div.prefix-left {
+div.head div.prefix-left {
     padding-top: calc(1.5vw - 10.5px);
     padding-left: 6vw;
     float: left;
 }
-div.prefix-right {
+div.head div.prefix-right {
     padding-top: calc(1.5vw - 10.5px);
     padding-right: 6vw;
     float: right;
 }
-div.prefix-right > div {
+div.head div.prefix-right > div {
     padding-left: 2vw;
     float: left;
 }
-div.head-card {
+div.head div.head-card {
     margin: calc(12.5vw - 21px) 25vw calc(12.5vw - 21px) 25vw;
     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
     width: 50vw;
@@ -47,35 +47,35 @@ div.head-card {
     box-shadow: 0 0 50px rgb(255, 255, 255);
     border-radius: 10px;
 }
-div.headicon {  
+div.head div.headicon {  
     --headimgwidth: 7vw;
     --headimgheight: 7vw;
     width: var(--headimgwidth);
     height: var(--headimgwidth);
 }
-img.headimg {
+div.head img.headimg {
     width: var(--headimgwidth);
     height: var(--headimgwidth);
     border-radius: 3vw;
 }
-div.head-card > div > canvas {
+div.head div.head-card > div > canvas {
     float: left;
     width: 26vw;
     height: 17vw;
 }
-div.headicon.left {
+div.head div.headicon.left {
     float: left;
     margin: 5vw 0px 0px 5vw;
 }
-div.headicon.right {
+div.head div.headicon.right {
     float: right;
     margin: 5vw 5vw 0px 0px;
 }
-div.head-center {
+div.head div.head-center {
     float: left;
 }
 
-div.head-center > div.heart {
+div.head div.head-center > div.heart {
     margin: 6.5vw 10.5vw 0px 10.5vw;
     left: 50%;
     width: 5vw;
@@ -83,7 +83,7 @@ div.head-center > div.heart {
     background-color: tomato;
     transform: rotate(-45deg);
 }
-div.head-center > div.heart:before , div.head-center > div.heart:after {
+div.head div.head-center > div.heart:before , div.head-center > div.heart:after {
     content: "";
     position: absolute;
     width: 5vw;
@@ -91,13 +91,13 @@ div.head-center > div.heart:before , div.head-center > div.heart:after {
     border-radius: 50%;
     background-color: tomato;
 }
-div.head-center > div.heart:before {
+div.head div.head-center > div.heart:before {
     top: -2.5vw;
 }
-div.head-center > div.heart:after {
+div.head div.head-center > div.heart:after {
     left: 2.5vw;
 }
-div.date {
+div.head div.date {
     top: 12.5vw;
     position: absolute;
     height: 11vw;
@@ -106,12 +106,12 @@ div.date {
     text-align: center;
     color:bisque;
 }
-div.date > div.day , div.date > div.time {
+div.head div.date > div.day , div.date > div.time {
     text-align: center;
     margin-top: 1.5vw;
     letter-spacing: 1vw;
 }
-div.date > div > span.text:after {
+div.head div.date > div > span.text:after {
     left: -1vw;
     width: 0px;
     display: inline-block;
@@ -119,26 +119,26 @@ div.date > div > span.text:after {
     position: relative;
     font-size: 1.5vw;
 }
-div.date > div > span.textday:after {
+div.head div.date > div > span.textday:after {
     content: "天";
 }
-div.date > div > span.texthours:after {
+div.head div.date > div > span.texthours:after {
     content: "时";
 }
-div.date > div > span.textminute:after {
+div.head div.date > div > span.textminute:after {
     content: "分";
 }
-div.date > div > span.textsecond:after {
+div.head div.date > div > span.textsecond:after {
     content: "秒";
 }
 
-div.end {
+/* div.end {
     margin: 2vw 0px 0px 0px;
     width: 100vw;
     text-align: center;
     height: 5vw;
     font-size: 2vw;
-}
-a {
+} */
+div.head a {
     text-decoration: none;
 }

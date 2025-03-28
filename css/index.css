@@ -58,11 +58,11 @@ div.head-card > div > canvas {
 }
 div.headicon.left {
     float: left;
-    margin: 5vw 0px 5vw 5vw;
+    margin: 5vw 0px 0px 5vw;
 }
 div.headicon.right {
     float: right;
-    margin: 5vw 5vw 5vw 0px;
+    margin: 5vw 5vw 0px 0px;
 }
 div.head-center {
     float: left;
@@ -76,26 +76,59 @@ div.head-center > div.heart {
     background-color: tomato;
     transform: rotate(-45deg);
 }
-div.head-center > div.heart:before {
+div.head-center > div.heart:before , div.head-center > div.heart:after {
     content: "";
     position: absolute;
-    top: -2.5vw;
     width: 5vw;
     height: 5vw;
     border-radius: 50%;
     background-color: tomato;
+}
+div.head-center > div.heart:before {
+    top: -2.5vw;
 }
 div.head-center > div.heart:after {
-    content: "";
-    position: absolute;
     left: 2.5vw;
-    width: 5vw;
-    height: 5vw;
-    border-radius: 50%;
-    background-color: tomato;
 }
-div.time {
-    
+div.date {
+    top: 12.5vw;
+    position: absolute;
+    height: 11vw;
+    width: 50vw;
+    font-size: 3vw;
+    text-align: center;
+}
+div.date > div.day , div.date > div.time {
+    text-align: center;
+    margin-top: 1.5vw;
+    letter-spacing: 1vw;
+}
+div.date > div > span.text:after {
+    left: -1vw;
+    width: 0px;
+    display: inline-block;
+    top: -2.5vw;
+    position: relative;
+    font-size: 1.5vw;
+}
+div.date > div > span.textday:after {
+    content: "天";
+}
+div.date > div > span.texthours:after {
+    content: "时";
+}
+div.date > div > span.textminute:after {
+    content: "分";
+}
+div.date > div > span.textsecond:after {
+    content: "秒";
+}
+
+div.end {
+    margin: 2vw 0px 0px 0px;
+    width: 100vw;
+    text-align: center;
+    height: 5vw;
     font-size: 2vw;
 }
 a {

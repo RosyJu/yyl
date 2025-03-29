@@ -27,6 +27,7 @@ div.axis> div >div.title {
     text-align: center;
 }
 div.axis > div.pages > div.pageslist> a.list {
+    float: left;
     display: block;
     width: calc(100% - 4vw);
     border: solid 1px;
@@ -35,21 +36,30 @@ div.axis > div.pages > div.pageslist> a.list {
     padding: 0.7vw 1vw 0.7vw 1vw;
     font-size: 1.5vw;
 }
-/* div.axis > div.pages > div.pageslist> a > div.list {
-    width: calc(100% - 4vw);
-    border: solid 1px;
-    border-radius: 0.3vw;
-    margin: 0vw 1vw 0.7vw 1vw;
-    padding: 0.7vw 1vw 0.7vw 1vw;
-    font-size: 1vw;
-} */
-div.axis > div.pages > div.pageslist> a > div.list > svg {
-    transform: rotate(-135deg);
+div.axis > div.pages > div.pageslist> a.list > div.list {
+    display: inline-block;
+}
+div.axis > div.pages > div.pageslist> a > div.listsvg {
+    width: 0px;
+    height: 0px;
+    transform: rotate(135deg);
     transform-origin: center;
     float: right;
-    top: -0.7vw;
-    padding: 0.4vw;
-    position: relative;
-    width: 2.6vw;
-    height: 2.6vw;
+    margin-top: 0.9804vw;
+}
+div.axis > div.pages > div.pageslist> a > div.listsvg:before {
+    content: "";
+    position: absolute;
+    width: 1vw;
+    height: 0.3vw;
+    background: #000;
+    border-radius: 0.3vw;
+}
+div.axis > div.pages > div.pageslist> a > div.listsvg:after {
+    content: "";
+    position: absolute;
+    width: 0.3vw;
+    height: 1vw;
+    background: #000;
+    border-radius: 0.3vw;
 }

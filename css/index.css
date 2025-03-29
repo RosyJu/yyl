@@ -23,6 +23,7 @@ div.head div.prefix {
     height: 3vw;
     backdrop-filter: blur(10px);
     color: #d6d6d6;
+    cursor: default;
 }
 div.head div.prefix-left {
     padding-top: calc(1.5vw - 10.5px);

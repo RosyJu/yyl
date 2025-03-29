@@ -27,17 +27,23 @@ div.axis> div >div.title {
     text-align: center;
 }
 div.axis > div.pages > div.pageslist> a.list {
-    float: left;
-    display: block;
+    /* float: left; */
+    display: inline-block;
     width: calc(100% - 4vw);
     border: solid 1px;
     border-radius: 0.3vw;
     margin: 0vw 1vw 0.7vw 1vw;
     padding: 0.7vw 1vw 0.7vw 1vw;
     font-size: 1.5vw;
+    height: 2.5vw;
 }
 div.axis > div.pages > div.pageslist> a.list > div.list {
-    display: inline-block;
+    /* display: inline-block; */
+    transform:translateY(-50%);
+    position: relative;
+    top: 1.25vw;
+    width: auto;
+    float: left;
 }
 div.axis > div.pages > div.pageslist> a > div.listsvg {
     width: 0px;
@@ -45,7 +51,8 @@ div.axis > div.pages > div.pageslist> a > div.listsvg {
     transform: rotate(135deg);
     transform-origin: center;
     float: right;
-    margin-top: 0.9804vw;
+    position: relative;
+    top: 1.25vw;
 }
 div.axis > div.pages > div.pageslist> a > div.listsvg:before {
     content: "";

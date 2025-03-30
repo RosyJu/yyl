@@ -31,7 +31,7 @@ div.axis > div.pages > div.pageslist> a.list {
     display: inline-block;
     width: calc(100% - 4vw);
     border: solid 1px;
-    border-radius: 0.3vw;
+    border-radius: 0.7vw;
     margin: 0vw 1vw 0.7vw 1vw;
     padding: 0.7vw 1vw 0.7vw 1vw;
     font-size: 1.5vw;

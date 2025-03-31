@@ -1,5 +1,5 @@
 [[redirects]]
-from = "/index.html"
+from = "/"
 to = "/index.xhtml"
 status = 200
 force = true

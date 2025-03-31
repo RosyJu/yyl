@@ -1,0 +1,4 @@
+[[redirects]]
+    from = "/*"
+    to = "/index.xhtml"
+    status = 200

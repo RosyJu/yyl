@@ -1,17 +1,14 @@
 div.axis {
     width: 62vw;
     margin: auto auto 2vw 19vw;
-    /* background: #000; */
-    /* min-height: 20vw; */
-    /* float: left; */
+    cursor: default;
 }
 div.axis a {
     text-decoration: none;
 }
 div.axis > div {
     width: 30vw;
-    /* min-height: 50vw; */
-    background: #bbbbbb;
+    background: #d6d6d6;
     border-radius: 1vw;
 }
 div.axis > div.pages {
@@ -21,13 +18,32 @@ div.axis > div.pages {
 div.axis > div.logs {
     float: right;
 }
-div.axis> div >div.title {
+div.axis > div > div.title {
     font-size: 1.5vw;
     margin: 1vw auto 1vw auto;
     text-align: center;
 }
+div.axis div.axisbutton {
+    float: right;
+    font-size: 1.2vw;
+    position: relative;
+    top: -3vw;
+    right: 1vw;
+    height: 0vw;
+}
+div.axis div.axisbutton > div.text {
+    height: 2.5vw;
+    width: 5vw;
+    text-align: center;
+    display: table;
+    background: #ff8f8f;
+    border-radius: 1vw;
+}
+div.axis div.axisbutton > div.text > span {
+    display: table-cell;
+    vertical-align: middle;
+}
 div.axis > div.pages > div.pageslist> a.list {
-    /* float: left; */
     display: inline-block;
     width: calc(100% - 4vw);
     border: solid 1px;

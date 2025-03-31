@@ -1,6 +1,6 @@
 @font-face {
     font-family: HarmonyOS;
-    src: url(./HarmonyOS_Sans_Medium.ttf);
+    src: url(./HarmonyOS_Sans_Medium.ttf)  format('truetype');
 }
 ::-webkit-scrollbar {
     display: none;
@@ -21,6 +21,7 @@ div.head div.prefix {
     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
     width: 100vw;
     height: 3vw;
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     color: #d6d6d6;
     cursor: default;
@@ -43,10 +44,18 @@ div.head div.head-card {
     margin: calc(12.5vw - 21px) 25vw calc(12.5vw - 21px) 25vw;
     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
     width: 50vw;
-    height: 25vw;   
+    height: 25vw;
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     box-shadow: 0 0 50px rgb(255, 255, 255);
     border-radius: 10px;
+}
+div.head div.head-card > div.card-title {
+    height: 0px;
+    width: 50vw;
+    text-align: center;
+    line-height: 5vw;
+    font-size: 1.5vw;
 }
 div.head div.headicon {  
     --headimgwidth: 7vw;

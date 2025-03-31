@@ -12,7 +12,14 @@ const datesecond = document.querySelectorAll(
   "div.date > div.time > span.textsecond.text"
 )[0];
 
-let date = setInterval(function () {
+// 阻止Tab键的默认行为
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Tab') {
+      event.preventDefault();
+  }
+});
+
+function Fdate() {
   // 计算时间戳起点终点时间段的时间戳差距
   const start = 1729869000; // 2024.12.25T23:10+0800
   let end = Math.floor(Date.now() / 1000);
@@ -27,9 +34,12 @@ let date = setInterval(function () {
   // 页面插入已完成的时间
   dateday.textContent = day;
   datehours.textContent = hours.toString().padStart(2, "0");
-  dateminute.innerHTML = `&ensp;${minute.toString().padStart(2, "0")}`;
-  datesecond.innerHTML = `&ensp;${second.toString().padStart(2, "0")}`;
-}, 200);
+  dateminute.textContent = ` ${minute.toString().padStart(2, "0")}`;
+  datesecond.textContent = ` ${second.toString().padStart(2, "0")}`;
+  return Fdate
+}
+
+let date = setInterval(Fdate(), 200);
 
 let popupstextdiv = document.querySelectorAll("div.popupstext")[0];
 const popupstext = {
@@ -64,6 +74,8 @@ const popupsSvg = function () {
     document.querySelectorAll("div.popups")[0].style.display = "none";
   }
 };
+
+document.querySelectorAll("div.head-card > div.card-title")[0].textContent = title[title[0]]
 
 document
   .querySelectorAll("div.popups > div.body > div.popupsPrefix > svg")[0]

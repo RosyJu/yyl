@@ -3,5 +3,10 @@ from = "/"
 to = "/index.xhtml"
 status = 200
 force = true
+[[redirects]]
+from = "/*"
+to = "/404.xhtml"
+status = 404
+force = true
 [build]
 functions = "functions"

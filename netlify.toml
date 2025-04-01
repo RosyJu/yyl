@@ -8,7 +8,6 @@ force = true
 from = "/*"
 to = "/404.xhtml"
 status = 404
-force = true
 
 [build]
 functions = "functions"

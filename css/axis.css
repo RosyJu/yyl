@@ -1,21 +1,24 @@
 div.axis {
-    width: 62vw;
-    margin: auto auto 2vw 19vw;
+    width: 82vw;
+    margin: auto auto 2vw 9vw;
     cursor: default;
+    user-select: none;
 }
 div.axis a {
     text-decoration: none;
 }
 div.axis > div {
-    width: 30vw;
+    width: 40vw;
     background: #d6d6d6;
     border-radius: 1vw;
 }
 div.axis > div.pages {
+    width: 30vw;
     float: left;
     margin-bottom: 0.7vw;
 }
 div.axis > div.logs {
+    width: 50vw;
     float: right;
 }
 div.axis > div > div.title {
@@ -78,11 +81,66 @@ div.axis > div.pages > div.pageslist> a > div.listsvg:before {
     background: #000;
     border-radius: 0.3vw;
 }
-div.axis > div.pages > div.pageslist> a > div.listsvg:after {
+div.axis > div.pages > div.pageslist > a > div.listsvg:after {
     content: "";
     position: absolute;
     width: 0.3vw;
     height: 1vw;
     background: #000;
     border-radius: 0.3vw;
+}
+div.axis > div.logs > div.logslist > div.list {
+    display: inline-block;
+    width: calc(100% - 4vw);
+    border: solid 1px;
+    border-radius: 0.7vw;
+    margin: 0vw 1vw 0.7vw 1vw;
+    padding: 0.7vw 1vw 0.7vw 1vw;
+    font-size: 1.5vw;
+}
+div.axis > div.logs > div.logslist > div.list > div.emoji {
+    position: relative;
+    /* transform: translateY(-50%); */
+    top: 0.5vw;
+    /* top: 50%; */
+    /* top: 1vw; */
+    --emojiwidth: 5vw;
+    --emojiheight: 5vw;
+    width: var(--emojiwidth);
+    height: var(--emojiheight);
+    float: left;
+    border-radius: 1vw;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    box-shadow: 0 0 30px rgb(255, 255, 255);
+}
+div.axis > div.logs > div.logslist > div.list > div.emoji > img {
+    position: relative;
+    top: calc(var(--emojiheight) * 0.1);
+    left: calc(var(--emojiwidth) * 0.1);
+    width: calc(var(--emojiwidth) * 0.8);
+    height: calc(var(--emojiheight) * 0.8);
+}
+div.axis > div.logs > div.logslist > div.list > div.body {
+    width: calc(26vw - var(--emojiheight));
+    float: left;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    margin-left: 1vw;
+}
+div.axis > div.logs > div.logslist > div.list > div.body > div.time {
+    font-size: 2vw;
+}
+div.axis > div.logs > div.logslist > div.list > div.body > label > div.title {
+    font-size: 3vw;
+}
+div.axis > div.logs > div.logslist > div.list > div.body > input {
+    display: none;
+}
+div.axis > div.logs > div.logslist > div.list > div.body > input:checked + div.description {
+    display: block;
+}
+div.axis > div.logs > div.logslist > div.list > div.body > div.description {
+    font-size: 1.5vw;
+    display: none;
 }

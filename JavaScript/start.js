@@ -1,3 +1,7 @@
+const js = {}
+const jslist = ['axis','end','fromverify','index','start','title']
+js.start = true
+
 const ipapi = {};
 
 fetch("https://ipapi.co/json")
@@ -9,10 +13,3 @@ fetch("https://ipapi.co/json")
   .catch((error) => {
     console.error("请求失败:", error);
   });
-(function (originalFetch) {
-  window.fetch = function () {
-    return originalFetch.apply(this, arguments).catch(function () {
-      window.location.href = "https://rosy.love/404.xhtml";
-    });
-  };
-})(window.fetch);

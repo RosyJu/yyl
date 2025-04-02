@@ -1,3 +1,4 @@
+js.fromverify = true
 let fromverify = localStorage.verify
 let verify
 if (fromverify == "050309") {

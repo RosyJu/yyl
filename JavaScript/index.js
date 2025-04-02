@@ -1,3 +1,4 @@
+js.index = true
 //获取日期的DOM
 const dateday = document.querySelectorAll(
   "div.date > div.day > span.textday.text"
@@ -60,6 +61,7 @@ copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 <br /><br /><a href="https://github.com/RosyJu/yyl/blob/main/LICENSE" target="_blank">github.com/RosyJu/yyl/blob/main/LICENSE</a>`,
   "Project Address": `<a href="https://github.com/RosyJu/yyl" target="_blank">github.com/RosyJu/yyl</a>`,
+  "Contact Us":`Email:755126039@qq.com<br />QQ:755126039`
 };
 
 const popupsSvg = function () {
@@ -80,9 +82,8 @@ document.querySelectorAll("div.head-card > div.card-title")[0].textContent = tit
 document
   .querySelectorAll("div.popups > div.body > div.popupsPrefix > svg")[0]
   .addEventListener("click", popupsSvg);
-document
-  .querySelectorAll("div.head div#License-Agreement > span")[0]
-  .addEventListener("click", popupsSvg);
-document
-  .querySelectorAll("div.head div#Project-Address > span")[0]
-  .addEventListener("click", popupsSvg);
+
+let headprefix = document.querySelectorAll("div.head div.prefix-right div[id] > span")
+headprefix.forEach(function(element) {
+  element.addEventListener("click", popupsSvg);
+});

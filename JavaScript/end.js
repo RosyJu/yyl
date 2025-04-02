@@ -1,3 +1,1 @@
-document.querySelectorAll("script").forEach((script) => {
-  script.remove();
-});
+js.end = true

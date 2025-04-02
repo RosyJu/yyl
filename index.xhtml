@@ -6,9 +6,9 @@
   <meta charset="UTF-8" />
   <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
   <script type="text/javascript" src="./javascript/start.js"></script>
-  
+
   <link rel="stylesheet" type="text/css" href="./css/index.css" />
   <link rel="stylesheet" type="text/css" href="./css/popups.css" />
   <link rel="stylesheet" type="text/css" href="./css/axis.css" />
@@ -19,6 +19,7 @@
     <div class="prefix">
       <div class="prefix-left">Love YYL</div>
       <div class="prefix-right">
+        <div id="Contact-Us"><span>Contact Us</span></div>
         <div id="License-Agreement"><span>License Agreement</span></div>
         <div id="Project-Address"><span>Project Address</span></div>
       </div>
@@ -69,8 +70,21 @@
         </div>
       </div>
       <div class="logslist">
-        <div class="list">
-        </div>
+        <!-- <div class="list">
+          <div class="emoji">
+            <img src="./images/emojis/0.png" />
+          </div>
+          <div class="body">
+            <div class="time">2024</div>
+            <label for="2024">
+              <div class="title">null</div>
+            </label>
+            <input type="checkbox" id="2024"/>
+            <div class="description">
+              description
+            </div>
+          </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -79,7 +93,7 @@
     <div class="body">
       <div class="popupsPrefix">
         <div class="title"></div>
-        <svg>
+        <svg xmlns="http://www.w3.org/2000/svg">
           <line x1="0vw" y1="0vw" x2="1vw" y2="1vw" stroke="red" stroke-width="0.2vw" stroke-linecap="round" />
           <line x1="1vw" y1="0vw" x2="0vw" y2="1vw" stroke="red" stroke-width="0.2vw" stroke-linecap="round" />
         </svg>
@@ -88,13 +102,27 @@
     </div>
   </div>
 
+
+
   <script type="text/javascript" src="./json/pages.js"></script>
+  <script type="text/javascript" src="./json/emojis.js"></script>
   <script type="text/javascript" src="./json/logs.js"></script>
   <script type="text/javascript" src="./javascript/title.js"></script>
   <script type="text/javascript" src="./javascript/fromverify.js"></script>
   <script type="text/javascript" src="./javascript/index.js"></script>
   <script type="text/javascript" src="./javascript/axis.js"></script>
   <script type="text/javascript" src="./javascript/end.js"></script>
+  <script>
+    if (jslist == false) {
+      window.location.href = `/404.xhtml`
+    } else {
+      for (let key in jslist) {
+        if (js[jslist[key]] == undefined) {
+          window.location.href = `/404.xhtml`
+        }
+      }
+    }
+  </script>
 </body>
 
 </html>

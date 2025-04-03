@@ -2,6 +2,7 @@ div.axis {
     width: 82vw;
     margin: auto auto 2vw 9vw;
     cursor: default;
+    -webkit-user-select: none;
     user-select: none;
 }
 div.axis a {

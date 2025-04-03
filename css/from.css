@@ -1,0 +1,16 @@
+div.from {
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    position: fixed;
+    top: 0vw;
+}
+div.from > div.body {
+    position: relative;
+    width: 50vw;
+    background: #9c9c9c;
+    height: 50vh;
+    left: 25vw;
+    top: 10vw;
+    border-radius: 1vw;
+}

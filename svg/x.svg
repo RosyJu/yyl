@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <line x1="0vw" y1="0vw" x2="1vw" y2="1vw" stroke="red" stroke-width="0.2vw" stroke-linecap="round" />
+    <line x1="1vw" y1="0vw" x2="0vw" y2="1vw" stroke="red" stroke-width="0.2vw" stroke-linecap="round" />
+</svg>

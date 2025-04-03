@@ -51,6 +51,7 @@ for (let key in logs) {
 
     let img = document.createElement("img")
     img.src = `./images/emojis/${checkemoji(logs[key].emoji)}.png`
+    img.title = checkemoji(logs[key].emoji)
 
     label.insertAdjacentElement("afterbegin", title)
 

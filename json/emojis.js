@@ -718,7 +718,6 @@ const emojis = [
 ]
 const checkemoji = (emoji) => {
     for (let key in emojis) {
-        // console.log(emojis[key].emojiId)
         if (emojis[key].describe == emoji) {
             return emojis[key].emojiId
         }

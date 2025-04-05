@@ -33,6 +33,3 @@ X-Content-Type-Options = "nosniff"
 
 # 启用跨站请求（CORS），只允许来自特定源的请求
 Access-Control-Allow-Origin = "https://rosy.love"
-
-# 防止网页中加载不安全的资源
-Content-Security-Policy = "upgrade-insecure-requests;"

@@ -1,147 +1,149 @@
 div.axis {
-    width: 82vw;
-    margin: auto auto 2vw 9vw;
-    cursor: default;
-    -webkit-user-select: none;
-    user-select: none;
+  width: 82vw;
+  margin: auto auto 2vw 9vw;
+  cursor: default;
+  -webkit-user-select: none;
+  user-select: none;
 }
 div.axis a {
-    text-decoration: none;
+  text-decoration: none;
 }
 div.axis > div {
-    width: 40vw;
-    background: #d6d6d6;
-    border-radius: 1vw;
+  width: 40vw;
+  background: #d6d6d6;
+  border-radius: 1vw;
 }
 div.axis > div.pages {
-    width: 30vw;
-    float: left;
-    margin-bottom: 0.7vw;
+  width: 30vw;
+  float: left;
+  margin-bottom: 0.7vw;
+}
+div.axis > div.pages > div.pageslist > a.list {
+  display: inline-block;
+  width: calc(100% - 4vw);
+  border: solid 1px;
+  border-radius: 0.7vw;
+  margin: 0vw 1vw 0.7vw 1vw;
+  padding: 0.7vw 1vw 0.7vw 1vw;
+  font-size: 1.5vw;
+  height: 2.5vw;
+}
+div.axis > div.pages > div.pageslist > a.list > div.list {
+  /* display: inline-block; */
+  transform: translateY(-50%);
+  position: relative;
+  top: 1.25vw;
+  width: auto;
+  float: left;
+}
+div.axis > div.pages > div.pageslist > a.list > div.listsvg {
+  width: 0px;
+  height: 0px;
+  transform: rotate(135deg);
+  transform-origin: center;
+  float: right;
+  position: relative;
+  top: 1.25vw;
+}
+div.axis > div.pages > div.pageslist > a.list > div.listsvg:before {
+  content: "";
+  position: absolute;
+  width: 1vw;
+  height: 0.3vw;
+  background: #000;
+  border-radius: 0.3vw;
+}
+div.axis > div.pages > div.pageslist > a.list > div.listsvg:after {
+  content: "";
+  position: absolute;
+  width: 0.3vw;
+  height: 1vw;
+  background: #000;
+  border-radius: 0.3vw;
 }
 div.axis > div.logs {
-    width: 50vw;
-    float: right;
-}
-div.axis > div > div.title {
-    font-size: 1.5vw;
-    margin: 1vw auto 1vw auto;
-    text-align: center;
-}
-div.axis div.axisbutton {
-    float: right;
-    font-size: 1.2vw;
-    position: relative;
-    top: -3vw;
-    right: 1vw;
-    height: 0vw;
-}
-div.axis div.axisbutton > div.text {
-    height: 2.5vw;
-    width: 5vw;
-    text-align: center;
-    display: table;
-    background: #ff8f8f;
-    border-radius: 1vw;
-}
-div.axis div.axisbutton > div.text > span {
-    display: table-cell;
-    vertical-align: middle;
-}
-div.axis > div.pages > div.pageslist> a.list {
-    display: inline-block;
-    width: calc(100% - 4vw);
-    border: solid 1px;
-    border-radius: 0.7vw;
-    margin: 0vw 1vw 0.7vw 1vw;
-    padding: 0.7vw 1vw 0.7vw 1vw;
-    font-size: 1.5vw;
-    height: 2.5vw;
-}
-div.axis > div.pages > div.pageslist> a.list > div.list {
-    /* display: inline-block; */
-    transform:translateY(-50%);
-    position: relative;
-    top: 1.25vw;
-    width: auto;
-    float: left;
-}
-div.axis > div.pages > div.pageslist> a > div.listsvg {
-    width: 0px;
-    height: 0px;
-    transform: rotate(135deg);
-    transform-origin: center;
-    float: right;
-    position: relative;
-    top: 1.25vw;
-}
-div.axis > div.pages > div.pageslist> a > div.listsvg:before {
-    content: "";
-    position: absolute;
-    width: 1vw;
-    height: 0.3vw;
-    background: #000;
-    border-radius: 0.3vw;
-}
-div.axis > div.pages > div.pageslist > a > div.listsvg:after {
-    content: "";
-    position: absolute;
-    width: 0.3vw;
-    height: 1vw;
-    background: #000;
-    border-radius: 0.3vw;
+  width: 50vw;
+  float: right;
 }
 div.axis > div.logs > div.logslist > div.list {
-    display: inline-block;
-    width: calc(100% - 4vw);
-    border: solid 1px;
-    border-radius: 0.7vw;
-    margin: 0vw 1vw 0.7vw 1vw;
-    padding: 0.7vw 1vw 0.7vw 1vw;
-    font-size: 1.5vw;
+  display: inline-block;
+  width: calc(100% - 4vw);
+  border: solid 1px;
+  border-radius: 0.7vw;
+  margin: 0vw 1vw 0.7vw 1vw;
+  padding: 0.7vw 1vw 0.7vw 1vw;
+  font-size: 1.5vw;
 }
 div.axis > div.logs > div.logslist > div.list > div.emoji {
-    position: relative;
-    /* transform: translateY(-50%); */
-    top: 0.5vw;
-    /* top: 50%; */
-    /* top: 1vw; */
-    --emojiwidth: 5vw;
-    --emojiheight: 5vw;
-    width: var(--emojiwidth);
-    height: var(--emojiheight);
-    float: left;
-    border-radius: 1vw;
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
-    box-shadow: 0 0 30px rgb(255, 255, 255);
+  position: relative;
+  /* transform: translateY(-50%); */
+  top: 0.5vw;
+  /* top: 50%; */
+  /* top: 1vw; */
+  --emojiwidth: 5vw;
+  --emojiheight: 5vw;
+  width: var(--emojiwidth);
+  height: var(--emojiheight);
+  float: left;
+  border-radius: 1vw;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+  box-shadow: 0 0 30px rgb(255, 255, 255);
 }
 div.axis > div.logs > div.logslist > div.list > div.emoji > img {
-    position: relative;
-    top: calc(var(--emojiheight) * 0.1);
-    left: calc(var(--emojiwidth) * 0.1);
-    width: calc(var(--emojiwidth) * 0.8);
-    height: calc(var(--emojiheight) * 0.8);
+  position: relative;
+  top: calc(var(--emojiheight) * 0.1);
+  left: calc(var(--emojiwidth) * 0.1);
+  width: calc(var(--emojiwidth) * 0.8);
+  height: calc(var(--emojiheight) * 0.8);
 }
 div.axis > div.logs > div.logslist > div.list > div.body {
-    width: calc(26vw - var(--emojiheight));
-    float: left;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    white-space:nowrap;
-    margin-left: 1vw;
+  width: calc(26vw - var(--emojiheight));
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: 1vw;
 }
 div.axis > div.logs > div.logslist > div.list > div.body > div.time {
-    font-size: 2vw;
+  font-size: 2vw;
 }
 div.axis > div.logs > div.logslist > div.list > div.body > label > div.title {
-    font-size: 3vw;
+  font-size: 3vw;
 }
 div.axis > div.logs > div.logslist > div.list > div.body > input {
-    display: none;
+  display: none;
 }
 div.axis > div.logs > div.logslist > div.list > div.body > input:checked + div.description {
-    display: block;
+  display: block;
 }
 div.axis > div.logs > div.logslist > div.list > div.body > div.description {
-    font-size: 1.5vw;
-    display: none;
+  width: 40vw;
+  font-size: 1.5vw;
+  display: none;
+  white-space: normal;
+}
+div.axis > div > div.title {
+  font-size: 1.5vw;
+  margin: 1vw auto 1vw auto;
+  text-align: center;
+}
+div.axis div.axisbutton {
+  float: right;
+  font-size: 1.2vw;
+  position: relative;
+  top: -3vw;
+  right: 1vw;
+  height: 0vw;
+}
+div.axis div.axisbutton > div.text {
+  height: 2.5vw;
+  width: 5vw;
+  text-align: center;
+  display: table;
+  background: #ff8f8f;
+  border-radius: 1vw;
+}
+div.axis div.axisbutton > div.text > span {
+  display: table-cell;
+  vertical-align: middle;
 }

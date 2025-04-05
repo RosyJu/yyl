@@ -11,3 +11,28 @@ status = 404
 
 [build]
 functions = "functions"
+
+[[headers]]
+# 设置全局响应头
+for = "/*"
+[headers.values]
+# 防止点击劫持，禁止网站在 iframe 中显示
+X-Frame-Options = "DENY"
+
+# 防止跨站脚本攻击（XSS）
+X-XSS-Protection = "1; mode=block"
+
+# 强制浏览器启用内容安全策略（CSP）来防止恶意脚本
+Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self';"
+
+# 设置 HTTP Strict Transport Security (HSTS) 强制使用 HTTPS
+Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+# 启用跨站请求伪造（CSRF）防护
+X-Content-Type-Options = "nosniff"
+
+# 启用跨站请求（CORS），只允许来自特定源的请求
+Access-Control-Allow-Origin = "https://rosy.love"
+
+# 防止网页中加载不安全的资源
+Content-Security-Policy = "upgrade-insecure-requests;"

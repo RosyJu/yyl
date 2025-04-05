@@ -150,7 +150,7 @@ hr {
   -ms-touch-action: none;
   touch-action: none;
   background: #bbada0;
-  border-radius: 6px;
+  border-radius: 18px;
   width: 500px;
   height: 500px;
   -webkit-box-sizing: border-box;
@@ -219,7 +219,7 @@ hr {
   height: 106.25px;
   margin-right: 15px;
   float: left;
-  border-radius: 3px;
+  border-radius: 9px;
   background: rgba(238, 228, 218, 0.35); }
   .grid-cell:last-child {
     margin-right: 0; }
@@ -322,7 +322,7 @@ hr {
   -moz-transition-property: -moz-transform;
   transition-property: transform; }
   .tile .tile-inner {
-    border-radius: 3px;
+    border-radius: 9px;
     background: #eee4da;
     text-align: center;
     font-weight: bold;

@@ -1,0 +1,36 @@
+div.popups {
+    left: 0vw;
+    top: 0vw;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 2vw;
+    display: none;
+}
+div.popups > div.body {
+    padding: 2.5vw;
+    border-radius: 1vw;
+    margin: 4vw auto auto 22.5vw;
+    max-height: 92vw;
+    background-color: antiquewhite;
+    width: 50vw;
+    text-align: center;
+}
+div.popups > div.body > div.popupsPrefix > svg {
+    width: 1vw;
+    height: 1vw;
+    position: relative;
+    top: -4vw;
+    left: 13vw;
+    background-color: black;
+    padding: 0.3vw;
+    border-radius: 0.3vw;
+    display:inline-block;
+}
+div.popups > div.body > div.popupstext {
+    font-size: 1vw;
+}
+div.popups a {
+    text-decoration: none;
+}

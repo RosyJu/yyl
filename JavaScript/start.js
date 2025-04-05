@@ -1,6 +1,6 @@
-const js = {}
-const jslist = ['axis','end','fromverify','index','start','title']
-js.start = true
+const js = {};
+const jslist = ["axis", "end", "fromverify", "index", "start", "title"];
+js.start = true;
 
 const ipapi = {};
 

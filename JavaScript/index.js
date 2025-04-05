@@ -1,4 +1,4 @@
-js.index = true
+js.index = true;
 //获取日期的DOM
 const dateday = document.querySelectorAll(
   "div.date > div.day > span.textday.text"
@@ -14,9 +14,9 @@ const datesecond = document.querySelectorAll(
 )[0];
 
 // 阻止Tab键的默认行为
-document.addEventListener('keydown', function(event) {
-  if (event.key === 'Tab') {
-      event.preventDefault();
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Tab") {
+    event.preventDefault();
   }
 });
 
@@ -37,7 +37,7 @@ function Fdate() {
   datehours.textContent = hours.toString().padStart(2, "0");
   dateminute.textContent = ` ${minute.toString().padStart(2, "0")}`;
   datesecond.textContent = ` ${second.toString().padStart(2, "0")}`;
-  return Fdate
+  return Fdate;
 }
 
 let date = setInterval(Fdate(), 200);
@@ -61,29 +61,5 @@ copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 <br /><br /><a href="https://github.com/RosyJu/yyl/blob/main/LICENSE" target="_blank">github.com/RosyJu/yyl/blob/main/LICENSE</a>`,
   "Project Address": `<a href="https://github.com/RosyJu/yyl" target="_blank">github.com/RosyJu/yyl</a>`,
-  "Contact Us":`Email:755126039@qq.com<br />QQ:755126039`
+  "Contact Us": `Email:755126039@qq.com<br />QQ:755126039`,
 };
-
-const popupsSvg = function () {
-  if (document.querySelectorAll("div.popups")[0].style.display == "none") {
-    let title = this.textContent;
-    popupstextdiv.innerHTML = popupstext[title];
-    document.querySelectorAll(
-      "div.popups div.popupsPrefix > div.title"
-    )[0].textContent = title;
-    document.querySelectorAll("div.popups")[0].style.display = "block";
-  } else {
-    document.querySelectorAll("div.popups")[0].style.display = "none";
-  }
-};
-
-document.querySelectorAll("div.head-card > div.card-title")[0].textContent = title[title[0]]
-
-document
-  .querySelectorAll("div.popups > div.body > div.popupsPrefix > svg")[0]
-  .addEventListener("click", popupsSvg);
-
-let headprefix = document.querySelectorAll("div.head div.prefix-right div[id] > span")
-headprefix.forEach(function(element) {
-  element.addEventListener("click", popupsSvg);
-});

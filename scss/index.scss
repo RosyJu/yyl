@@ -1,0 +1,153 @@
+@font-face {
+    font-family: HarmonyOS;
+    src: url(./HarmonyOS_Sans_Medium.ttf)  format('truetype');
+}
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+    background: #d6d6d6;
+    font-family: HarmonyOS;
+    margin: 0;
+}
+div.head {
+    background: linear-gradient(rgba(214,214,214, 0),rgba(214,214,214, 0.1),rgba(214,214,214, 0.3),rgba(214,214,214, 0.5),rgba(214,214,214, 1)),url(../images/background.png) no-repeat;
+    background-size:100% 100%;
+    width: 100vw;
+    height: 50vw;
+}
+div.head div.prefix {
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+    width: 100vw;
+    height: 3vw;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    color: #d6d6d6;
+    cursor: default;
+}
+div.head div.prefix-left {
+    padding-top: calc(1.5vw - 10.5px);
+    padding-left: 6vw;
+    float: left;
+}
+div.head div.prefix-right {
+    padding-top: calc(1.5vw - 10.5px);
+    padding-right: 6vw;
+    float: right;
+}
+div.head div.prefix-right > div {
+    padding-left: 2vw;
+    float: left;
+}
+div.head div.head-card {
+    margin: calc(12.5vw - 21px) 25vw calc(12.5vw - 21px) 25vw;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+    width: 50vw;
+    height: 25vw;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 50px rgb(255, 255, 255);
+    border-radius: 10px;
+}
+div.head div.head-card > div.card-title {
+    height: 0px;
+    width: 50vw;
+    text-align: center;
+    line-height: 5vw;
+    font-size: 1.5vw;
+}
+div.head div.headicon {  
+    --headimgwidth: 7vw;
+    --headimgheight: 7vw;
+    width: var(--headimgwidth);
+    height: var(--headimgwidth);
+}
+div.head img.headimg {
+    width: var(--headimgwidth);
+    height: var(--headimgwidth);
+    border-radius: 3vw;
+}
+div.head div.head-card > div > canvas {
+    float: left;
+    width: 26vw;
+    height: 17vw;
+}
+div.head div.headicon.left {
+    float: left;
+    margin: 5vw 0px 0px 5vw;
+}
+div.head div.headicon.right {
+    float: right;
+    margin: 5vw 5vw 0px 0px;
+}
+div.head div.head-center {
+    float: left;
+}
+
+div.head div.head-center > div.heart {
+    margin: 6.5vw 10.5vw 0px 10.5vw;
+    left: 50%;
+    width: 5vw;
+    height: 5vw;
+    background-color: tomato;
+    transform: rotate(-45deg);
+}
+div.head div.head-center > div.heart:before , div.head-center > div.heart:after {
+    content: "";
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color: tomato;
+}
+div.head div.head-center > div.heart:before {
+    top: -2.5vw;
+}
+div.head div.head-center > div.heart:after {
+    left: 2.5vw;
+}
+div.head div.date {
+    top: 12.5vw;
+    position: absolute;
+    height: 11vw;
+    width: 50vw;
+    font-size: 3vw;
+    text-align: center;
+    color:bisque;
+}
+div.head div.date > div.day , div.date > div.time {
+    text-align: center;
+    margin-top: 1.5vw;
+    letter-spacing: 1vw;
+}
+div.head div.date > div > span.text:after {
+    left: -1vw;
+    width: 0px;
+    display: inline-block;
+    top: -2.5vw;
+    position: relative;
+    font-size: 1.5vw;
+}
+div.head div.date > div > span.textday:after {
+    content: "天";
+}
+div.head div.date > div > span.texthours:after {
+    content: "时";
+}
+div.head div.date > div > span.textminute:after {
+    content: "分";
+}
+div.head div.date > div > span.textsecond:after {
+    content: "秒";
+}
+
+/* div.end {
+    margin: 2vw 0px 0px 0px;
+    width: 100vw;
+    text-align: center;
+    height: 5vw;
+    font-size: 2vw;
+} */
+div.head a {
+    text-decoration: none;
+}

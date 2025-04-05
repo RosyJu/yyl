@@ -11,22 +11,3 @@ status = 404
 
 [build]
 functions = "functions"
-
-[[headers]]
-  # 设置所有文件的响应头
-  for = "/*"
-  [headers.values]
-    # 设置 XHTML 文件的 Content-Type 为 UTF-8 编码
-    Content-Type = "application/xhtml+xml; charset=UTF-8"
-    
-[[headers]]
-  # 针对 .js 文件设置 UTF-8 编码
-  for = "*.js"
-  [headers.values]
-    Content-Type = "application/javascript; charset=UTF-8"
-    
-[[headers]]
-  # 针对 .css 文件设置 UTF-8 编码
-  for = "*.css"
-  [headers.values]
-    Content-Type = "text/css; charset=UTF-8"

@@ -13,9 +13,28 @@
   <link rel="stylesheet" type="text/css" href="./css/popups.css" />
   <link rel="stylesheet" type="text/css" href="./css/axis.css" />
   <link rel="stylesheet" type="text/css" href="./css/from.css" />
+  <link rel="stylesheet" type="text/css" href="./css/loading.css" />
 </head>
 
 <body>
+  <div class="load" loading="true">
+    <div id="loading">
+      <div class="loading loading-1"></div>
+      <div class="loading loading-2"></div>
+      <div class="loading loading-3"></div>
+      <div class="loading loading-4"></div>
+      <div class="loading loading-5"></div>
+      <div class="loading loading-6"></div>
+      <div class="loading loading-7"></div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      let loading = document.querySelector('body > .load');
+      loading.setAttribute('loading', 'false');
+      loading.innerHTML = '';
+    }())
+  </script>
   <div class="head">
     <div class="prefix">
       <div class="prefix-left">Love YYL</div>

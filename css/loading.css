@@ -1,0 +1,171 @@
+:root {
+  --animationTime: 2s;
+  --loading: 4px;
+}
+
+body > .load {
+  width: 100vw;
+  height: 100vh;
+  background: #e2e2e2;
+}
+body > .load > #loading {
+  position: fixed;
+  top: calc(50% - 12px);
+  left: calc(50% - 108px);
+}
+body > .load > #loading > div.loading-1 {
+  animation: loading-1 var(--animationTime) ease infinite;
+  margin-right: var(--loading);
+}
+body > .load > #loading > div.loading-2 {
+  animation: loading-2 var(--animationTime) ease infinite;
+  margin-right: var(--loading);
+  animation-delay: 0.1s;
+}
+body > .load > #loading > div.loading-3 {
+  animation: loading-3 var(--animationTime) ease infinite;
+  margin-right: var(--loading);
+  animation-delay: 0.2s;
+}
+body > .load > #loading > div.loading-4 {
+  animation: loading-4 var(--animationTime) ease infinite;
+  margin-right: var(--loading);
+  animation-delay: 0.3s;
+}
+body > .load > #loading > div.loading-5 {
+  animation: loading-3 var(--animationTime) ease infinite;
+  margin-right: var(--loading);
+  animation-delay: 0.4s;
+}
+body > .load > #loading > div.loading-6 {
+  animation: loading-2 var(--animationTime) ease infinite;
+  margin-right: var(--loading);
+  animation-delay: 0.5s;
+}
+body > .load > #loading > div.loading-7 {
+  animation: loading-1 var(--animationTime) ease infinite;
+  animation-delay: 0.6s;
+}
+body > .load > #loading > div.loading {
+  position: relative;
+  float: left;
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(#f07c82, #e3b4b8, #92b3a5);
+  border-radius: 12px;
+}
+
+body > .load[loading=true] {
+  display: block;
+}
+
+body > .load[loading=false] {
+  display: none;
+}
+
+body > .load[loading=true] ~ div {
+  display: none;
+}
+
+body > .load[loading=false] ~ div {
+  display: block;
+}
+
+@keyframes loading-1 {
+  0% {
+    top: 0px;
+    padding-top: 0px;
+  }
+  50% {
+    top: -24px;
+    padding-top: 48px;
+  }
+  100% {
+    top: 0px;
+    padding-top: 0px;
+  }
+}
+@keyframes loading-2 {
+  0% {
+    top: 0px;
+    padding-top: 0px;
+  }
+  50% {
+    top: -48px;
+    padding-top: 96px;
+  }
+  100% {
+    top: 0px;
+    padding-top: 0px;
+  }
+}
+@keyframes loading-3 {
+  0% {
+    top: 0px;
+    padding-top: 0px;
+  }
+  50% {
+    top: -48px;
+    padding-top: 120px;
+  }
+  100% {
+    top: 0px;
+    padding-top: 0px;
+  }
+}
+@keyframes loading-4 {
+  0% {
+    top: 0px;
+    padding-top: 0px;
+  }
+  50% {
+    top: -28px;
+    padding-top: 120px;
+  }
+  100% {
+    top: 0px;
+    padding-top: 0px;
+  }
+}
+body .load > #loading > div.loading-1 {
+  animation: loading-1 var(--animationTime) ease infinite;
+  margin-right: var(--loading);
+}
+
+body .load > #loading > div.loading-2 {
+  animation: loading-2 var(--animationTime) ease infinite;
+  margin-right: var(--loading);
+  animation-delay: 0.1s;
+}
+
+body .load > #loading > div.loading-3 {
+  animation: loading-3 var(--animationTime) ease infinite;
+  margin-right: var(--loading);
+  animation-delay: 0.2s;
+}
+
+body .load > #loading > div.loading-4 {
+  animation: loading-4 var(--animationTime) ease infinite;
+  margin-right: var(--loading);
+  animation-delay: 0.3s;
+}
+
+body .load > #loading > div.loading-5 {
+  animation: loading-3 var(--animationTime) ease infinite;
+  margin-right: var(--loading);
+  animation-delay: 0.4s;
+}
+
+body .load > #loading > div.loading-6 {
+  animation: loading-2 var(--animationTime) ease infinite;
+  margin-right: var(--loading);
+  animation-delay: 0.5s;
+}
+
+body .load > #loading > div.loading-7 {
+  animation: loading-1 var(--animationTime) ease infinite;
+  animation-delay: 0.6s;
+}
+
+/* body .load > #loading > div.loading-1 {
+} */

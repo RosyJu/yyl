@@ -1,5 +1,5 @@
 const js = {};
-const jslist = ["axis", "end", "fromverify", "index", "start", "title"];
+const jslist = ["axis", "end", "fromverify", "index", "start", "title","onclick"];
 js.start = true;
 
 const ipapi = {};

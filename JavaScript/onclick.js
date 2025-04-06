@@ -1,3 +1,5 @@
+js.onclick = true;
+
 // page head
 const popupsSvg = function () {
   if (document.querySelectorAll("div.popups")[0].style.display == "none") {
